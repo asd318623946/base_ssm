@@ -1,0 +1,72 @@
+@charset "utf-8";
+html,body {
+	-webkit-overflow-scrolling: touch;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+	font-family: arial,"\5b8b\4f53",sans-serif,"Microsoft YaHei",tahoma !important
+}
+form,table,tr,td,div,p,h1,h2,h3,h4,h5,h6,input,label,a,i,ul,li,ol,dl,dd,span,img,select,button,em {
+	padding: 0;
+	margin: 0
+}
+a {
+	cursor: pointer;
+}
+.clear {
+	clear:  both;
+	line-height: 0!important;
+	height: 0!important;
+	font-size: 0!important
+}
+.float-left {
+	float: left;
+	display: inline;
+}
+.float-right {
+	float: right;
+	display: inline;
+}
+.datagrid-cell{line-height:28px;}
+.datagrid-cell-rownumber{line-height:28px;height:28px}
+.formTable{padding:1px;}
+.formTable th{text-align:right;width:90px;padding:5px 0px 5px 0;}
+.formTable td{padding:5px 0 5px 0px;}
+.formTable samp{vertical-align:middle;color:#f00;}
+
+.mymask {
+	z-index: 999999 !important;
+}
+
+.icons-calendar {
+	background: url("../images/btn_icons.png") no-repeat -400px -80px;
+	width: 28px;
+	height: 28px;
+	display: block;
+	line-height: 28px;
+	cursor: pointer;
+	position: relative;
+}
+/*
+*覆盖easyui的样式
+*/
+.datagrid-row-selected {
+    background: #A7B0B5 !important;
+    color: #282828 !important;
+}
+
+.combobox-item-selected {
+    background: #A7B0B5 !important;
+    color: #282828 !important;
+}
+.inputText {
+	width: 200px;
+}
+.datagrid-footer .datagrid-row .datagrid-td-rownumber{
+	background: lightgrey !important;
+}
+.datagrid-footer .datagrid-row {
+	background: lightgrey !important;
+}

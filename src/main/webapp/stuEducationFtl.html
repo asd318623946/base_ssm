@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+<head>
+  <title>合同详情</title>
+  
+  <style type="text/css">
+  	li {
+  		list-style-type:none;
+  		float: left; 
+  		text-align:left;
+  		display:block;
+		height:35px;
+		width:280px;
+		padding-left:15px;
+	 }
+	 .clear{clear: both;}
+  	.div1 {background-color: #FFF0F5 ;}
+  	h3{background-color:#FFE4E1;text-align:center;   }
+  </style>
+</head>
+
+<body>
+	<div class="div1">
+		<h3 >教育贷商品信息</h3>
+		<ul>
+			<li>
+				<label>课程类型(1)：</label>
+				<span>${BusinessType1!}</span>
+			</li>
+			<li>
+				<label>课程名称(1)：</label>
+				<span>${Manufacturer1!}</span>
+			</li>
+			<li>
+				<label>课程时长(1)：</label>
+				<span>${BrandType1!}</span>
+			</li>
+			<li>
+				<label>价格(1)(元)：</label>
+				<span>${Price1!}</span>
+			</li>
+			<li>
+				<label>课程类型(2)：</label>
+				<span>${BusinessType2!}</span>
+			</li>
+			<li>
+				<label>课程名称(2)：</label>
+				<span>${Manufacturer2!}</span>
+			</li>
+			<li>
+				<label>课程时长(2)：</label>
+				<span>${BrandType2!}</span>
+			</li>
+			<li>
+				<label>价格(2)(元)：</label>
+				<span>${Price2!}</span>
+			</li>
+			
+			<li>
+				<label>课程顾问姓名：</label>
+				<span>${courseConsultantName1!}</span>
+			</li>
+			<li>
+				<label>课程顾问电话：</label>
+				<span>${courseConsultantPhone1!}</span>
+			</li>
+			<li>
+				<label>是否试读：</label>
+				<span>${isProbation1!}</span>
+			</li>
+			<li>
+				<label>试读时间：</label>
+				<span>${probationTime1!"0"}天</span>
+			</li>
+			<li>
+				<label>课程总价(元)：</label>
+				<span>${TotalPrice!}</span>
+			</li>
+			<li>
+				<label>自付金额(元)：</label>
+				<span>${TotalSum!"0.00"}</span>
+			</li>
+			<li>
+				<label>贷款本金(元)：</label>
+				<span>${BusinessSum!}</span>
+			</li>
+			<li>
+				<label>分期数：</label>
+				<span>${periods!}</span>
+			</li>
+			<li>
+				<label>首次还款日：</label>
+				<span>${sFirstDueDate!}</span>
+			</li>
+			<li>
+				<label>首次还款额(元)：</label>
+				<span>${firstdrawingdate!}</span>
+			</li>
+			<li>
+				<label>每月还款日：</label>
+				<span>${sDefaultDueDay!}</span>
+			</li>
+			<li>
+				<label>每月还款额(元)：</label>
+				<span>${MonthRepayMent!}</span>
+			</li>
+			<li>
+				<label>月贷款利息(%)：</label>
+				<span>${monthlyinterestrate!}</span>
+			</li>
+			<li>
+				<label>月客户服务费率(%)：</label>
+				<span>${customerservicerates!}</span>
+			</li>
+			<li>
+				<label>月财务管理费率(%)：</label>
+				<span>${managementfeesrate!}</span>
+			</li>
+			<li>
+				<label>月增值服务费率(%)：</label>
+				<span>${CreditFeeRate!}</span>
+			</li>
+			<li>
+				<label>是否申请参加保险：</label>
+				<span>${CreditCycle!}</span>
+			</li>
+			<li>
+				<label>保险公司名称：</label>
+				<span>${bxcompanyName!}</span>
+			</li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="div1">
+		<h3 >学校信息</h3>
+		<ul>
+			<li>
+				<label>学校全称：</label>
+				<span>${schoolName!}</span>
+			</li>
+			<li>
+				<label>所在学院：</label>
+				<span>${schoolCollege!}</span>
+			</li>
+			<li>
+				<label>系：</label>
+				<span>${schoolDepartment!}</span>
+			</li>
+			<li>
+				<label>专业：</label>
+				<span>${schoolProfessionalName!}</span>
+			</li>
+			<li>
+				<label>班级：</label>
+				<span>${schoolClass!}</span>
+			</li>
+			<li>
+				<label>学号：</label>
+				<span>${schoolStudentNo!}</span>
+			</li>
+			<li>
+				<label>学习形式：</label>
+				<span>${schoolLearning!}</span>
+			</li>
+			<li>
+				<label>学籍状态：</label>
+				<span>${schoolStatusStudent!}</span>
+			</li>
+			<li>
+				<label>学历类别：</label>
+				<span>${schoolDegreeCategory!}</span>
+			</li>
+			<li>
+				<label>学制：</label>
+				<span>${schoolLength!}</span>
+			</li>
+			<li>
+				<label>层次：</label>
+				<span>${schoolLevel!}</span>
+			</li>
+			<li>
+				<label>学院/宿舍电话：</label>
+				<span>${schoolDormitoryTelephone!}</span>
+			</li>
+			<li>
+				<label>辅导员电话：</label>
+				<span>${schoolCounselorTelephone!}</span>
+			</li>
+			<li>
+				<label>入学日期：</label>
+				<span>${schoolEnrollmentDate!}</span>
+			</li>
+			<li>
+				<label>预计毕业日期：</label>
+				<span>${schoolExpectedDate!}</span>
+			</li>
+			<li>
+				<label>学校地址：</label>
+				<span>${schoolAddress!}${schoolTownship!}${schoolStreet!}${schoolCommunity!}${schoolRoomNo!}</span>
+			</li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="div1">
+		<h3 >家庭成员信息</h3>
+		<ul>
+			<li>
+				<label>父/母姓名：</label>
+				<span>${KinshipName!}</span>
+			</li>
+			<li>
+				<label>与申请人关系：</label>
+				<span>${familyParentsRelations!}</span>
+			</li>
+			<li>
+				<label>父/母电话：</label>
+				<span>${KinshipTel!}</span>
+			</li>
+			<li>
+				<label>家庭固话：</label>
+				<span>${FamilyTel!}</span>
+			</li>
+			<li>
+				<label>父/母单位名称：</label>
+				<span>${familyParentsCompany!}</span>
+			</li>
+			<li>
+				<label>父/母单位电话：</label>
+				<span>${familyParentsCompanytel!}</span>
+			</li>
+			<li>
+				<label>父/母职位：</label>
+				<span>${familyParentsPosition!}</span>
+			</li>
+			<li>
+				<label>父/母地址：</label>
+				<span>${spouseAddress!}${spouseTownship!}${spouseStreet!}${spouseCommunity!}${spouseRoomNo!}</span>
+			</li>
+			<li>
+				<label>父母是否知道贷款：</label>
+				<span>${spouseIsEducation!}</span>
+			</li>
+			<li>
+				<label>其他亲属姓名：</label>
+				<span>${familyParentsName!}</span>
+			</li>
+			<li>
+				<label>与申请人关系：</label>
+				<span>${RelativeType}</span>
+			</li>
+			<li>
+				<label>其他亲属联系方式：</label>
+				<span>${familyParentsTelephone!}</span>
+			</li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+	
+</body>
+
+</html>

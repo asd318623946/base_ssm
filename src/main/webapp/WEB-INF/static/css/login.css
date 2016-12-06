@@ -1,0 +1,132 @@
+@charset "utf-8";
+html, body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	background: url("../images/login_body_bg.jpg") center top no-repeat fixed #fcf9f0;
+	min-height: 530px;
+	min-width: 900px
+}
+.login-title {
+	position: absolute;
+	top: 37px;
+    left: 48px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #189ad6
+}
+.header-bg {
+	filter:alpha(opacity=70);  
+    -moz-opacity:0.7;  
+    -khtml-opacity: 0.7;  
+    opacity: 0.7;
+    background: #f5f4ef;
+    width: 100%;
+    min-width: 900px;
+    height: 45px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-bottom: 2px solid #d7d5cc;
+}
+.header-panel {
+	background: url("../images/logo_small.png") 0 0 no-repeat; 
+	width: 333px;
+	height: 45px;
+	text-indent: -9999px;
+	overflow: hidden;
+	position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.form-login-panel {
+	background: url("../images/login_bg.png") 0 0 no-repeat; 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 430px;
+	height: 406px;
+	display: block;
+	margin-left: -215px;
+	margin-top: -200px;
+}
+
+.form-login {
+	position: relative;
+	display: block;
+	margin: 144px 0 0 128px
+}
+.form-line-user label,.form-line-pwd label{
+	display: none;
+}
+
+.form-line-user {
+	position: relative;
+	display: block;
+	height: 30px;
+}
+.form-line-pwd {
+	position: relative;
+	display: block;
+	height: 30px;
+	margin-top: 16px
+}
+.form-line-rememberMe {
+	position: relative;
+	display: block;
+	height: 30px;
+	margin-top: 10px;
+	line-height: 22px;
+}
+.form-line-rememberMe input {
+	position: absolute;
+	top: 5px;
+	left: 0;
+}
+.form-line-rememberMe label{
+	cursor: pointer;
+	color: #FFF;
+	margin-left: 15px
+}
+
+.textbox-text {
+	border: 0 !important;
+	background: transparent !important;	
+}
+.textbox {
+	border: 0 !important;
+	background: transparent !important;	
+}
+
+.form-login-btn {
+	background: url("../images/login_btn.png") 0 0 no-repeat ;
+	position: absolute;
+	top: 113px;
+	right: 40px;
+	display: block;
+	width: 94px;
+	height: 51px
+}
+.form-login-btn:hover {
+	background-position: -96px 0;
+}
+ 
+.tooltip {
+	filter:alpha(opacity=80);  
+    -moz-opacity:0.8;  
+    -khtml-opacity: 0.8;  
+    opacity: 0.8;
+    background: #2ba3d9 !important;
+    border-color: #1796ce !important;
+    color: #FFF !important;
+}
+.form-line-msg {
+	padding-top: 10px
+}
+
+
+

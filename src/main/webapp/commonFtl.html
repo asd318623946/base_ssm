@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+<head>
+  <title>合同详情</title>
+  
+  <style type="text/css">
+  	li {
+  		list-style-type:none;
+  		float: left; 
+  		text-align:left;
+  		display:block;
+		height:35px;
+		width:280px;
+		padding-left:15px;
+	 }
+	 .clear{clear: both;}
+  	.div1 {background-color: #FFF0F5 ;}
+  	h3{background-color:#FFE4E1;text-align:center;   }
+  </style>
+</head>
+
+<body>
+	<div class="div1">
+		<h3 >基本信息</h3>
+		<ul>
+			<li>
+				<label>合同编码：</label>
+				<span>${serialNo!}</span>
+			</li>
+			<li>
+				<label>销售点代码：</label>
+				<span>${stores!}</span>
+			</li>
+			<li>
+				<label>销售点名称：</label>
+				<span>${storesName!}</span>
+			</li>
+			<li>
+				<label>销售代码：</label>
+				<span>${InputUserID!}</span>
+			</li>
+			<li>
+				<label>销售姓名：</label>
+				<span>${promotersname!}</span>
+			</li>
+			<li>
+				<label>销售电话：</label>
+				<span>${sMobileNum!}</span>
+			</li>
+			<li>
+				<label>申请类别：</label>
+				<span>${ApplyType!}</span>
+			</li>
+			<li>
+				<label>过去申请次数：</label>
+				<span>${Severaltimes!}</span>
+			</li>
+			<li>
+				<label>产品代码：</label>
+				<span>${BusinessType!}</span>
+			</li>
+			<li>
+				<label>申请日期：</label>
+				<span>${salesubmittime!}</span>
+			</li>
+			<li>
+				<label>销售点地址：</label>
+				<span>${sAddress!}</span>
+			</li>
+			
+		</ul>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="div1">
+		<h3 >个人资料</h3>
+		<ul>
+			<li>
+				<label>姓名：</label>
+				<span>${CustomerName!}</span>
+			</li>
+			<li>
+				<label>性别：</label>
+				<span>${sex!}</span>
+			</li>
+			<li>
+				<label>身份证号：</label>
+				<span>${CertID!}</span>
+			</li>
+			<li>
+				<label>发证机关：</label>
+				<span>${Issueinstitution!}</span>
+			</li>
+			<li>
+				<label>身份证有效期：</label>
+				<span>${MaturityDate!}</span>
+			</li>
+			<li>
+				<label>社保号/学号：</label>
+				<span>${sino!}</span>
+			</li>
+			<li>
+				<label>教育程度：</label>
+				<span>${EduExperience!}</span>
+			</li>
+			<li>
+				<label>住宅/宿舍电话：</label>
+				<span>${FamilyTel!}</span>
+			</li>
+			<li>
+				<label>住宅电话登记人：</label>
+				<span>${PhoneMan!}</span>
+			</li>
+			<li>
+				<label>手机：</label>
+				<span>${MobileTelephone!}</span>
+			</li>
+			<li>
+				<label>电子邮箱：</label>
+				<span>${EmailAdd!}</span>
+			</li>
+			<li>
+				<label>QQ：</label>
+				<span>${QQNo!}</span>
+			</li>
+			<li>
+				<label>婚姻状况：</label>
+				<span>${Marriage!}</span>
+			</li>
+			<li>
+				<label>子女数目：</label>
+				<span>${Childrentotal!}</span>
+			</li>
+			<li>
+				<label>住房情况：</label>
+				<span>${House!}</span>
+			</li>
+			<li>
+				<label>现居地址与户籍地址是否相同：</label>
+				<span>${Flag2!}</span>
+			</li>
+			<li>
+				<label>户籍地址：</label>
+				<span>${Nativeplace!}${Villagetown!}${Street!}${Community!}${CellNo!}</span>
+			</li>
+			<li>
+				<label>现居地址：</label>
+				<span>${FamilyAdd!}${Countryside!}${Villagecenter!}${Plot!}${Room!}</span>
+			</li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="div1">
+		<h3 >其他联系人信息</h3>
+		<ul>
+			<li>
+				<label>联系人姓名：</label>
+				<span>${OtherContact!}</span>
+			</li>
+			<li>
+				<label>与申请人关系：</label>
+				<span>${RelativeType1!}</span>
+			</li>
+			<li>
+				<label>联系电话：</label>
+				<span>${ContactTel!}</span>
+			</li>
+			
+		</ul>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="div1">
+		<h3 >收入及支出信息</h3>
+		<ul>
+			<li>
+				<label>月收入总额(元)：</label>
+				<span>${totalIncome!}</span>
+			</li>
+			<li>
+				<label>其他收入(元/月)：</label>
+				<span>${OtherRevenue!"0.00"}</span>
+			</li>
+			<li>
+				<label>家庭月收入(元)：</label>
+				<span>${FamilyMonthIncome!}</span>
+			</li>
+			<li>
+				<label>个人月支出(元/月)：</label>
+				<span>${expenditure!"0.00"}</span>
+			</li>
+			
+		</ul>
+		<div class="clear"></div>
+	</div>
+	<div class="div1">
+		<h3 >还款账户信息</h3>
+		<ul>
+			<li>
+				<label>还款账号：</label>
+				<span>${RepaymentNo!}</span>
+			</li>
+			<li>
+				<label>开户银行：</label>
+				<span>${sRepaymentBank!}</span>
+			</li>
+			<li>
+				<label>户名：</label>
+				<span>${RepaymentName!}</span>
+			</li>
+			<li>
+				<label>客户银行账号：</label>
+				<span>${ReplaceAccount!}</span>
+			</li>
+			<li>
+				<label>客户开户银行：</label>
+				<span>${OpenBank!}</span>
+			</li>
+			<li>
+				<label>客户银行帐户名：</label>
+				<span>${ReplaceName!}</span>
+			</li>
+			<li>
+				<label>是否代扣：</label>
+				<span>${repaymentway}</span>
+			</li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+	
+</body>
+
+</html>

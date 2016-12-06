@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+<head>
+  <title>合同详情</title>
+  
+  <style type="text/css">
+  	li {
+  		list-style-type:none;
+  		float: left; 
+  		text-align:left;
+  		display:block;
+		height:35px;
+		width:280px;
+		padding-left:15px;
+	 }
+	 .clear{clear: both;}
+  	.div1 {background-color: #FFF0F5 ;}
+  	h3{background-color:#FFE4E1;text-align:center;   }
+  </style>
+</head>
+
+<body>
+	
+	<div class="div1">
+		<h3 >商品信息</h3>
+		<ul>
+			<li>
+				<label>商品类型(1)：</label>
+				<span>${BusinessType1!}</span>
+			</li>
+			<li>
+				<label>品牌(1)：</label>
+				<span>${BrandType1!}</span>
+			</li>
+			<li>
+				<label>商品型号(1)：</label>
+				<span>${Manufacturer1!}</span>
+			</li>
+			<li>
+				<label>价格(1)(元)：</label>
+				<span>${Price1!}</span>
+			</li>
+			<li>
+				<label>商品类型(2)：</label>
+				<span>${BusinessType2!}</span>
+			</li>
+			<li>
+				<label>品牌(2)：</label>
+				<span>${BrandType2!}</span>
+			</li>
+			<li>
+				<label>商品型号(2)：</label>
+				<span>${Manufacturer2!}</span>
+			</li>
+			<li>
+				<label>价格(2)(元)：</label>
+				<span>${Price2!}</span>
+			</li>
+			<li>
+				<label>商品类型(3)：</label>
+				<span>${BusinessType3!}</span>
+			</li>
+			<li>
+				<label>品牌(3)：</label>
+				<span>${BrandType3!}</span>
+			</li>
+			<li>
+				<label>商品型号(3)：</label>
+				<span>${Manufacturer3!}</span>
+			</li>
+			<li>
+				<label>价格(3)(元)：</label>
+				<span>${Price3!}</span>
+			</li>
+			<li>
+				<label>商品总价(元)：</label>
+				<span>${TotalPrice!}</span>
+			</li>
+			<li>
+				<label>自付金额(元)：</label>
+				<span>${TotalSum!"0.00"}</span>
+			</li>
+			<li>
+				<label>贷款本金(元)：</label>
+				<span>${BusinessSum!}</span>
+			</li>
+			<li>
+				<label>分期数：</label>
+				<span>${periods!}</span>
+			</li>
+			
+			<li>
+				<label>首次还款日：</label>
+				<span>${sFirstDueDate!}</span>
+			</li>
+			<li>
+				<label>首次还款额(元)：</label>
+				<span>${firstdrawingdate!}</span>
+			</li>
+			<li>
+				<label>每月还款日：</label>
+				<span>${sDefaultDueDay!}</span>
+			</li>
+			<li>
+				<label>每月还款额(元)：</label>
+				<span>${MonthRepayMent!}</span>
+			</li>
+			<li>
+				<label>月贷款利息(%)：</label>
+				<span>${monthlyinterestrate!}</span>
+			</li>
+			<li>
+				<label>月客户服务费率(%)：</label>
+				<span>${customerservicerates!}</span>
+			</li>
+			<li>
+				<label>月财务管理费率(%)：</label>
+				<span>${managementfeesrate!}</span>
+			</li>
+			<li>
+				<label>月增值服务费率(%)：</label>
+				<span>${CreditFeeRate!}</span>
+			</li>
+			<li>
+				<label>是否选择随心还：</label>
+				<span>${BugPayPkgind!}</span>
+			</li>
+			<li>
+				<label>随心还服务费(元)：</label>
+				<span>${bugPayPkgindFee!"0.00"}</span>
+			</li>
+			<li>
+				<label>是否申请参加保险：</label>
+				<span>${CreditCycle!}</span>
+			</li>
+			<li>
+				<label>保险公司名称：</label>
+				<span>${bxcompanyName!}</span>
+			</li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="div1">
+		<h3 >单位信息</h3>
+		<ul>
+			<li>
+				<label>单位/学校/个体全称：</label>
+				<span>${WorkCorp!}</span>
+			</li>
+			<li>
+				<label>任职部门/班级：</label>
+				<span>${EmployRecord!}</span>
+			</li>
+			<li>
+				<label>职位：</label>
+				<span>${HeadShip!}</span>
+			</li>
+			<li>
+				<label>行业类别：</label>
+				<span>${IndustryType!}</span>
+			</li>
+			<li>
+				<label>单位性质：</label>
+				<span>${CellProperty!}</span>
+			</li>
+			<li>
+				<label>单位电话：</label>
+				<span>${WorkTel!}</span>
+			</li>
+			<li>
+				<label>邮寄地址：</label>
+				[#if ${mailingAddress} =="1"]
+					<span>居住地址</span>
+				[#else]
+					<span>单位地址</span>
+				[/#if]
+			</li>
+			<li>
+				<label>总工作经验/大学学习时间(年)：</label>
+				<span>${JobTotal!}</span>
+			</li>
+			<li>
+				<label>现单位工作/个体营业时间/距离毕业时间(月)：</label>
+				<span>${JobTime!}</span>
+			</li>
+			<li>
+				<label>在线单位是否购买社保：</label>
+				<span>${isSocialSecurity!}</span>
+			</li>
+			<li>
+				<label>单位地址：</label>
+				<span>${WorkAdd!}${UnitCountryside!}${UnitStreet!}${UnitRoom!}${UnitNo!}</span>
+			</li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="div1">
+		<h3 >配偶及家庭成员信息</h3>
+		<ul>
+			<li>
+				<label>配偶姓名：</label>
+				<span>${SpouseName!}</span>
+			</li>
+			<li>
+				<label>配偶移动电话：</label>
+				<span>${SpouseTel!}</span>
+			</li>
+			<li>
+				<label>配偶单位名称：</label>
+				<span>${SpouseWorkCorp!}</span>
+			</li>
+			<li>
+				<label>配偶单位电话：</label>
+				<span>${SpouseWorkTel!}</span>
+			</li>
+			<li>
+				<label>家庭成员名称：</label>
+				<span>${KinshipName!}</span>
+			</li>
+			<li>
+				<label>家庭成员类型：</label>
+				<span>${RelativeType!}</span>
+			</li>
+			<li>
+				<label>家庭成员电话：</label>
+				<span>${KinshipTel!}</span>
+			</li>
+			<li>
+				<label>家庭成员联系地址：</label>
+				<span>${KinshipAdd!}</span>
+			</li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+	
+	
+</body>
+
+</html>
